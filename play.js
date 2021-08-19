@@ -7,6 +7,7 @@
 //                implementing the game Snake. This will be the main file for the entire 
 //                project. There may be other files for modularizing the code.
 
+//Requires the connect function to be able to connect with the game server
 const connect = require('./client');
 
 console.log('Connecting...');
