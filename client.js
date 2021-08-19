@@ -14,7 +14,7 @@ const connect = function () {
     port: 50541
   });
 
-  //interprets the incoming data as text
+  //Interprets the incoming data as text
   conn.setEncoding('utf8');
 
   //implements the ability to receive messages from the game server
@@ -25,4 +25,5 @@ const connect = function () {
   return conn;
 }
 
+//Exports the function to be used in other files
 module.exports = connect;
