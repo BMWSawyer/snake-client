@@ -6,25 +6,7 @@
 //                implementing the game Snake. This will be the main file for the entire 
 //                project. There may be other files for modularizing the code.
 
-const net = require('net');
-
-//Esablishes connection with the game server
-const connect = function () {
-  const conn = net.createConnection({
-    host: 'localhost',
-    port: 50541
-  });
-
-  //interprets the incoming data as text
-  conn.setEncoding('utf8');
-
-  //implements the ability to receive messages from the game server
-  conn.on('data', (message) => {
-    console.log(`Message from the server: ${message}`);
-  });
-
-  return conn;
-}
+const connect = require('./client');
 
 console.log('Connecting...');
 connect();
