@@ -32,6 +32,8 @@ const connect = function () {
     conn.write("Name: BMW");
     
     conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
     
   });
 
