@@ -5,8 +5,13 @@
 // 5.   Purpose: This file handles the user input from the keyboard in order to be able to 
 //                move the snake during the game or exit the game.
 
-const setupInput = function() {
+
+// Stores the active TCP connection object
+let connection;
+
+const setupInput = function(conn) {
   const stdin = process.stdin;
+  connection = conn;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
   stdin.resume();
@@ -24,16 +29,16 @@ const handleUserInput = function(key) {
     process.exit();
   }
   if (key === 'w') {
-    console.log('up');
+    connection.write('Move: up');
   }
   if (key === 's') {
-    console.log('down');
+    connection.write('Move: down');
   }
   if (key === 'a') {
-    console.log('left');
+    connection.write('Move: left');
   }
   if (key === 'd') {
-    console.log('right');
+    connection.write('Move: right');
   }
 }
 
