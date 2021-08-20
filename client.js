@@ -30,6 +30,9 @@ const connect = function () {
   //Sends a name back to the server in the form of a three character alpha-numeric initial
   conn.on('connect', () => {
     conn.write("Name: BMW");
+    
+    conn.write("Move: up");
+    
   });
 
   return conn;
