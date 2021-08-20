@@ -31,17 +31,10 @@ const connect = function () {
   conn.on('connect', () => {
     conn.write("Name: BMW");
     
-    setTimeout(() => {
+    setInterval(() => {
       conn.write("Move: up");
     }, 50);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 100);
-
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 150);
     
   });
 
