@@ -22,8 +22,14 @@ const connect = function () {
     console.log(`Message from the server: ${message}`);
   });
 
+  //Prints message to the client upon connection with server
   conn.on('connect', () => {
     console.log('Successfully connected to the game server')
+  });
+
+  //Sends a name back to the server in the form of a three character alpha-numeric initial
+  conn.on('connect', () => {
+    conn.write("Name: BMW");
   });
 
   return conn;
