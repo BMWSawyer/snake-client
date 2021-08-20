@@ -18,10 +18,22 @@ const setupInput = function() {
   return stdin;
 }
 
-//Checks to see if the user input from the keyboard is Ctrl C, if so exits game
+//Handles user input from the keyboard. Either exits game or sends data back to the setupInput function
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
+  }
+  if (key === 'w') {
+    console.log('up');
+  }
+  if (key === 's') {
+    console.log('down');
+  }
+  if (key === 'a') {
+    console.log('left');
+  }
+  if (key === 'd') {
+    console.log('right');
   }
 }
 
