@@ -31,9 +31,9 @@ const connect = function () {
   conn.on('connect', () => {
     conn.write("Name: BMW");
     
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 50);
     
   });
 
