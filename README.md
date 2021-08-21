@@ -14,8 +14,8 @@ This project was created and published by me as part of my learnings at Lighthou
 
 ## Final Product
 
-!["screenshot description"]('./screenshot1.png')
-!["screenshot description"]('./screenshot2.png')
+!["This is a screenshot mid-game using one of the canned messages."]('./screenshot1.png')
+!["This is a screenshot as soon as you connect to the server and your snake shows up on the game board."]('./screenshot2.png')
 
 ## Dependencies
 
@@ -24,7 +24,7 @@ This project was created and published by me as part of my learnings at Lighthou
 ## Getting Started
 
 - Clone the snek-multiplayer repo from Github into one directory above your Snake game.
-- In order to run the game cd into your snek-multiplayer directory locally and use the `npm run play` command.
-- Run the development snake client using the `node play.js` command with the snake-client directory locally.
+- In order to run the game cd into your snek-multiplayer directory locally and run `npm install` and then use the `npm run play` command.
+- Run the development snake client using the `node play.js` command within the snake-client directory locally.
 - Movement comes from the `w`, `a`, `s`, `d` keys.
-- The key inputs `b`, `b`, and `n` will generate canned messages while playing the game.
+- The key inputs `b`, `h`, and `n` will generate canned messages while playing the game.
