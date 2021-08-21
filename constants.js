@@ -9,6 +9,7 @@ const IP = 'localhost';
 const PORT = 50541;
 
 
+//Exports the variables to be used in other files
 module.exports = {
   IP,
   PORT
