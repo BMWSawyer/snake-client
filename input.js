@@ -50,4 +50,5 @@ const handleUserInput = function(key) {
   }
 };
 
+//Exports the function to be used in other files
 module.exports = { setupInput };
