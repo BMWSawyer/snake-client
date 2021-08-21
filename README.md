@@ -4,7 +4,7 @@ Snake game is a very popular video game. It is a video game concept where the pl
 
 This is simply a multiplayer take on the genre.
 
-Before you can run this client, you will need to be running the server side which you can download and install from here.
+Before you can run this client, you will need to be running the server side which you can download and install from [here] (https://github.com/lighthouse-labs/snek-multiplayer).
 
 ## Purpose
 
@@ -14,12 +14,17 @@ This project was created and published by me as part of my learnings at Lighthou
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["screenshot description"]('./screenshot1.png')
+!["screenshot description"]('./screenshot2.png')
 
+## Dependencies
+
+- net
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side.
-- Run the development snake client using the `node play.js` command.
+- Clone the snek-multiplayer repo from Github into one directory above your Snake game.
+- In order to run the game cd into your snek-multiplayer directory locally and use the `npm run play` command.
+- Run the development snake client using the `node play.js` command with the snake-client directory locally.
+- Movement comes from the `w`, `a`, `s`, `d` keys.
 - The key inputs `b`, `b`, and `n` will generate canned messages while playing the game.
