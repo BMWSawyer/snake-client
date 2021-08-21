@@ -36,4 +36,4 @@ const connect = function () {
 }
 
 //Exports the function to be used in other files
-module.exports = connect;
+module.exports = { connect };
