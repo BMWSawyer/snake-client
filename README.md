@@ -14,8 +14,8 @@ This project was created and published by me as part of my learnings at Lighthou
 
 ## Final Product
 
-!["This is a screenshot mid-game using one of the canned messages."](#./screenshot1.png)
-!["This is a screenshot as soon as you connect to the server and your snake shows up on the game board."](#./screenshot2.png)
+!["This is a screenshot mid-game using one of the canned messages."](./screenshot1.png)
+!["This is a screenshot as soon as you connect to the server and your snake shows up on the game board."](./screenshot2.png)
 
 ## Dependencies
 
