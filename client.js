@@ -6,12 +6,13 @@
 //                The function is exported so it's available in other files.
 
 const net = require('net');
+const { IP, PORT } = require('./constants');
 
 //Esablishes connection with the game server
 const connect = function () {
   const conn = net.createConnection({
-    host: 'localhost',
-    port: 50541
+    host: IP,
+    port: PORT
   });
 
   //Interprets the incoming data as text
